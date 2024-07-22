@@ -1,0 +1,196 @@
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+.main {
+display: flex;
+flex-direction: row;
+width: 100vw;
+height: auto;
+}
+.container {
+background: radial-gradient(circle 600px at 0 0, #fff, #e8eefe8c);
+backdrop-filter: blur(25px);
+display: block;
+overflow-x: hidden;
+height: auto;
+/*grid-template-columns: 1fr 3fr 5fr;
+*/
+}
+.navigation {
+width: calc(100% - 16px);
+height: 60%;
+background: #000;
+color: #fff;
+display: grid;
+grid-template-areas: "item1 item6 item5"
+"item3 item2 item4";
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+place-items: center;
+border-radius: 0;
+margin: 0;
+padding: 4px 8px;
+}
+.navigation img:nth-child(1){
+grid-area: item1;
+width: calc(1.5rem + 4vw);
+height: calc(1.5rem + 4vw);
+border-radius: 100%;
+}
+.navigation div:nth-child(3) {
+grid-area: item3;
+}
+.navigation div:nth-child(4) {
+grid-area: item4;
+}
+.navigation img:nth-child(5) {
+grid-area: item5;
+}
+.navigation .nav-item {
+white-space: nowrap;
+display: flex;
+align-items: center;
+font-size: 100%;
+transform: rotate(0);
+margin: 8px 0;
+}
+.navigation div:nth-child(2) {
+grid-area: item2;
+text-align: left;
+}
+
+.main-content {
+overflow: hidden!important;
+display: block;
+padding: 12px;
+height: auto;
+}
+.footerMain {
+width: calc(100% - (56px + 16px + 2vw));
+}
+.footerMain h1{
+font-size: 180%;
+}
+.footerMain:after{
+top: 0;
+right: 0;
+font-size: 300%;
+}
+.right-content {
+overflow: hidden;
+max-height: calc(400px + 4vw);
+}
+.right-content img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+transform: translateX(0);
+}
+.mainCard {
+margin: 3vw calc(8px + 1vw);
+width: calc(100% - (44px + 16px + 2vw));
+}
+.tags{
+padding: 4px 10px;
+margin: 3vw calc(8px + 1vw);
+width: calc(100% - (44px + 16px + 2vw));
+}
+.mainDes {
+padding: 8px 10px;
+margin: 4vw calc(8px + 1vw);
+width: calc(100% - (44px + 16px + 2vw));
+}
+.tech-info {
+margin: 2vw calc(8px + 1vw);
+width: calc(100% - (44px + 16px + 2vw));
+}
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+.main {
+height: auto;
+}
+.container {
+background: radial-gradient(circle 600px at 0 0, #fff, #e8eefe8c);
+backdrop-filter: blur(25px);
+display: grid;
+grid-template-areas: "item1 item2"
+"item3 item3";
+grid-template-columns: 1fr 2fr;
+overflow-x: hidden;
+height: auto;
+}
+.container .sidebar:nth-child(1){
+grid-area: item1;
+}
+.container .main-content:nth-child(2){
+grid-area: item2;
+padding: 4vw 8vw;
+box-sizing: border-box;
+height: auto;
+display: block;
+}
+.container .right-content:nth-child(3){
+grid-area: item3;
+width: 100%;
+}
+.right-content .image-container {
+height: 80%;
+}
+.footerMain {
+width: calc(100% - (32px + 16px + 2vw));
+}
+.right-content img{
+width: 100%;
+object-fit: cover;
+transform: translateX(0);
+}
+.navigation .nav-item {
+font-size: 85%;
+}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+.main {
+height: auto;
+}
+.container {
+height: auto;
+overflow-x: hidden;
+height: auto;
+}
+.main-content{
+height: auto;
+display: block;
+}
+.footerMain {
+width: calc(140% - (32px + 16px + 2vw));
+}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+.right-content {
+height: 100vh;
+}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+.mainDes {
+padding: 2px 10px;
+margin: .5vw calc(8px + 1vw);
+width: calc(100% - (20px + 16px + 2vw));
+}
+.right-content {
+height: 100vh;
+}
+}
+
+/* Ultra large devices (extra large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+.right-content {
+height: 100vh;
+}
+}
