@@ -110,18 +110,22 @@ width: calc(100% - (44px + 16px + 2vw));
 .main {
 height: auto;
 }
+
 .container {
 background: radial-gradient(circle 600px at 0 0, #fff, #e8eefe8c);
 backdrop-filter: blur(25px);
 display: grid;
 grid-template-areas: "item1 item2"
-"item3 item3";
+"item1 item3";
 grid-template-columns: 1fr 2fr;
 overflow-x: hidden;
 height: auto;
 }
 .container .sidebar:nth-child(1){
 grid-area: item1;
+}
+.navigation{
+min-height: 150px!important;
 }
 .container .main-content:nth-child(2){
 grid-area: item2;
