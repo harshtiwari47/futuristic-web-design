@@ -178,9 +178,10 @@ margin: 8px 0 8px 8px;
 border: 2px solid #000;
 background: #ffffffa1;
 color: #000;
-display: grid;
-grid-template-columns: 2fr 1fr;
+display: flex;
+/*grid-template-columns: 2fr 1fr;*/
 place-items: center;
+justify-content: space-between;
 border-radius: 3rem;
 padding: 4px 6px;
 font-size: 97%;
