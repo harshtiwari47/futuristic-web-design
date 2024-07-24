@@ -213,7 +213,7 @@ max-height: calc(140px + 4vw);
 font-size: calc(100% + .4vw);
 }
 .main-content {
-font-size: calc(100% + .1vw);
+font-size: calc(100% - .2vw);
 }
 .mainCard img {
 max-height: calc(140px + 5vw);
@@ -223,6 +223,6 @@ max-height: calc(140px + 5vw);
 
 
 }
-div {
+/*div {
 border: 1px solid red;
-}
+}*/
