@@ -207,7 +207,7 @@ max-height: calc(140px + 4vw);
 }
 @media (min-width: 1919px) {
 body {
-font-size: calc(100% + 0.5vw);
+font-size: calc(100% + 0.05vw);
 }
 .mainCard img {
 max-height: calc(140px + 5vw);
