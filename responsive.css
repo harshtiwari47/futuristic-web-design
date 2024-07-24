@@ -185,7 +185,7 @@ width: calc(100% - (20px + 16px + 2vw));
 }
 .right-content {
 height: 100vh;
-flex:1;
+flex: 1;
 }
 }
 
@@ -197,6 +197,16 @@ font-size: 110%;
 .right-content {
 height: 100vh;
 flex: 1;
+}
+}
+@media (min-width: 1920px) {
+:root {
+font-size: 130%;
+}
+}
+@media (min-width: 3840px) {
+:root {
+font-size: 160%;
 }
 }
 /*div {
