@@ -201,7 +201,7 @@ flex: 1;
 }
 @media (min-width: 1920px) {
 :root {
-font-size: calc(100% + 3vw);
+font-size: calc(100% + 1.5vw);
 }
 .mainCard{
 max-height: 200px;
