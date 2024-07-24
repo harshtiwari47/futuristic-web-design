@@ -54,7 +54,7 @@ color: var(--text);
 display: grid;
 grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
 grid-template-columns: 1fr;
-margin: 3.5vh calc(8px + 1.5vw);
+margin: 2vh calc(8px + 1.5vw);
 place-items: center;
 border-radius: 4vw;
 }
@@ -97,6 +97,7 @@ grid-gap: 1vh; */
 display: block;
 flex-direction: row;
 grid-gap: 2vh;
+margin: 2vh 0;
 }
 .right-content {
 overflow: hidden!important;
@@ -126,7 +127,7 @@ height: calc(60px + 1vw);
 background: var(--oppThemeClr);
 color: var(--text);
 position: absolute;
-top: 3.5vh;
+top: 2vh;
 right: calc(8px + 1.5vw);
 border-radius: 100%;
 overflow: hidden;
@@ -175,6 +176,7 @@ background: var(--landing-light-blur);
 border-radius: 2rem;
 padding: 10px;
 margin: 1vw calc(8px + 1vw);
+margin-top: 0;
 width: calc(100% - (20px + 16px + 2vw));
 grid-gap: 2%;
 }
