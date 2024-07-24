@@ -189,7 +189,7 @@ object-fit: cover;
 max-height: calc(140px + 4vw);
 }
 .mainCard div {
-font-size: 77%;
+font-size: calc(50% + 0.6vw);
 color: var(--textLight);
 display: grid;
 align-items: center;
