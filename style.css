@@ -1,5 +1,6 @@
 :root {
 --body: #f0f2f3;
+font-size: clamp(1rem, calc(0.75rem + 0.4vw), 1.5rem);
 }
 .light {
 --text: #fcfcfd;
@@ -52,7 +53,7 @@ color: var(--text);
 display: grid;
 grid-template-rows: 1fr 1fr 3fr 1fr 1fr;
 grid-template-columns: 1fr;
-margin: 2vh calc(8px + 1.5vw);
+margin: 1vh calc(8px + 1.5vw);
 place-items: center;
 border-radius: 4vw;
 }
@@ -95,7 +96,7 @@ grid-gap: 1vh; */
 display: flex;
 flex-direction: column;
 justify-content: space-between;
-margin: 2vh 0;
+margin: 1vh 0;
 }
 .right-content {
 position: relative;
@@ -140,7 +141,7 @@ color: var(--text);
 fill: var(--text)!important;
 }
 .footerMain {
-flex:1;
+flex: 1;
 max-height: 400px;
 color: var(--oppThemeClr);
 z-index: 10;
@@ -148,7 +149,7 @@ border-radius: 1rem;
 background: radial-gradient(circle 32em at 100% 0, var(--text), #d6e6f500);
 padding: 8px 16px;
 margin: calc(1vw + 2vh) calc(8px + 1vw);
-width: calc(180% - (32px + 16px + 2vw));
+width: calc(180% - (48px + 2vw));
 display: grid;
 place-items: center;
 position: relative;
@@ -166,7 +167,6 @@ text-shadow: 0 0 30px var(--text);
 }
 .footerMain h1{
 font-size: 280%;
-word-break: break-word;
 }
 .mainCard {
 display: grid;
@@ -174,7 +174,7 @@ grid-template-columns: 1fr 1fr;
 background: var(--landing-light-blur);
 border-radius: 2rem;
 padding: 10px;
-margin: calc(1vw + 1vh) calc(8px + 1vw);
+margin: 1vh calc(8px + 1vw);
 margin-top: 0;
 width: calc(100% - (20px + 16px + 2vw));
 grid-gap: 2%;
@@ -188,7 +188,7 @@ object-fit: cover;
 max-height: calc(140px + 4vw);
 }
 .mainCard div {
-font-size: clamp(1rem, calc(0.5rem + 0.65vw), 2rem);
+font-size: 77%;
 color: var(--textLight);
 display: grid;
 align-items: center;
@@ -228,21 +228,21 @@ text-align: center;
 position: relative;
 }
 .mainCard button span:after {
-   content: '›';
-   font-size: 1.5rem;
-   position: absolute;
-   top: calc(50% - 0.75rem);
-   bottom: 50%;
-   color: var(--text);
+content: '›';
+font-size: 1.5rem;
+position: absolute;
+top: calc(50% - 0.75rem);
+bottom: 50%;
+color: var(--text);
 }
 .tech-info {
 position: relative;
 padding: 10px;
-margin: calc(1vw + 1vh) calc(8px + 1vw);
+margin: 1vh calc(8px + 1vw);
 width: calc(100% - (20px + 16px + 2vw));
 }
 .techCard{
-margin: calc(8px + 1vw) 0;
+margin-bottom: calc(8px + 1vw);
 padding: 0 0 0 12px;
 border-left: 3px solid;
 border-image: linear-gradient(to top, #2e363f3e, var(--textLight), #2e363f0d) 1;
@@ -292,7 +292,7 @@ left: calc(-1 * (4.5% + 0.25vw + 5px));
 }
 .tags{
 padding: 4px 10px;
-margin: calc(1vw + 1vh) calc(8px + 1vw);
+margin: 1vh calc(8px + 1vw);
 width: calc(100% - (20px + 16px + 2vw));
 }
 .tags button{
