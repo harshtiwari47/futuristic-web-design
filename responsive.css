@@ -178,6 +178,9 @@ flex: 1;
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
+.main-content {
+font-size: calc(100% - .14vw);
+}
 .mainDes {
 padding: 2px 10px;
 margin: .5vw calc(8px + 1vw);
@@ -223,6 +226,6 @@ max-height: calc(140px + 5vw);
 
 
 }
-/*div {
+div {
 border: 1px solid red;
-}*/
+}
