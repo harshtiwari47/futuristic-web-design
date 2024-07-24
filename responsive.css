@@ -187,6 +187,9 @@ width: calc(100% - (20px + 16px + 2vw));
 height: 100vh;
 flex: 1;
 }
+.mainCard img {
+max-height: calc(140px + 3vw);
+}
 }
 
 /* Ultra large devices (extra large desktops, 1400px and up) */
@@ -194,17 +197,26 @@ flex: 1;
 :root {
 font-size: calc(100% + .25vw);
 }
+.main-content {
+font-size: calc(100% + .15vw);
+}
 .right-content {
 height: 100vh;
 flex: 1;
+}
+.mainCard img {
+max-height: calc(140px + 4vw);
 }
 }
 @media (min-width: 1920px) {
 :root {
 font-size: calc(100% + .4vw);
 }
-.mainCard{
-max-height: 200px;
+.main-content {
+font-size: calc(100% + .25vw);
+}
+.mainCard img {
+max-height: calc(140px + 5vw);
 }
 }
 @media (min-width: 3840px) {
