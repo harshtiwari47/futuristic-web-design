@@ -74,7 +74,6 @@ right: 0;
 font-size: 300%;
 }
 .right-content {
-overflow: hidden;
 max-height: calc(400px + 4vw);
 }
 .right-content img{
@@ -173,6 +172,7 @@ width: calc(140% - (32px + 16px + 2vw));
 @media (min-width: 992px) and (max-width: 1199.98px) {
 .right-content {
 height: 100vh;
+flex: 1;
 }
 }
 
@@ -185,15 +185,20 @@ width: calc(100% - (20px + 16px + 2vw));
 }
 .right-content {
 height: 100vh;
+flex:1;
 }
 }
 
 /* Ultra large devices (extra large desktops, 1400px and up) */
 @media (min-width: 1400px) {
 :root {
-   font-size: 110%;
+font-size: 110%;
 }
 .right-content {
 height: 100vh;
+flex: 1;
 }
 }
+/*div {
+border: 1px solid red;
+}*/

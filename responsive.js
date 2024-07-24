@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', (ev) => {
 if (window.innerHeight > 1480 && window.innerWidth > 920) {
-document.querySelector('.main').style.height = `calc(${window.innerHeight/2}px + 4vh)`;
+document.querySelector('.main').style.height = `calc(${window.innerHeight/2.05}px + 2vh)`;
 document.querySelector('.right-content').style.height = `calc(${window.innerHeight/2}px + 4vh)`;
+document.querySelector('.main-content').style.height = `calc(${window.innerHeight/2.5}px + 4vh)`;
+let mainCont = document.querySelector('.main-content');
+let computedStyle = window.getComputedStyle(mainCont);
+let mainContChildHeight = (parseFloat(computedStyle.height)/6);
+document.querySelector('.main-content .footerMain').style.height = `${mainContChildHeight}px`;
+document.querySelector('.main-content .footerMain').style.padding = `8px 16px`;
 document.querySelector('.navigation').style.height = `calc(${window.innerHeight/2.5}px + 4vh)`;
 }
 });
