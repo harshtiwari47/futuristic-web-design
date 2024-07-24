@@ -8,7 +8,7 @@
 --oppThemeClr: #000;
 --landing-blur: #fff;
 --landing-light-blur: #c8d8ea90;
---hover-color: #0000e4;
+--hover-color: #0070e4;
 --hover-color-light: #6060dc;
 --primary: #4e47de;
 --secondary: #556eba;
@@ -38,11 +38,9 @@ button, input {
 font-family: 'Fahkwang';
 }
 .main {
-/*background-image: url('bg.jpg');
-object-fit: cover;*/
 background: var(--text);
 display: flex;
-overflow: hidden;
+overflow: hidden!important;
 width: 100vw;
 }
 .navigation {
@@ -78,12 +76,11 @@ text-align: center;
 font-size: 100%;
 }
 .nav-item:hover {
-text-decoration: underline;
-font-size: 115%;
+font-weight: 800;
 color: var(--hover-color-light);
 }
 .container {
-overflow: hidden;
+overflow: hidden!important;
 background: radial-gradient(circle 600px at 0 0, var(--landing-blur), var(--body));
 backdrop-filter: blur(25px);
 display: grid;
@@ -148,7 +145,7 @@ max-height: 400px;
 color: var(--oppThemeClr);
 z-index: 10;
 border-radius: 1rem;
-background: radial-gradient(circle 260px at 100% 0, var(--text), #d6e6f500);
+background: radial-gradient(circle 32em at 100% 0, var(--text), #d6e6f500);
 padding: 8px 16px;
 margin: calc(1vw + 2vh) calc(8px + 1vw);
 width: calc(180% - (32px + 16px + 2vw));
@@ -172,7 +169,6 @@ font-size: 280%;
 word-break: break-word;
 }
 .mainCard {
-min-height: 140px;
 display: grid;
 grid-template-columns: 1fr 1fr;
 background: var(--landing-light-blur);
@@ -182,13 +178,14 @@ margin: calc(1vw + 1vh) calc(8px + 1vw);
 margin-top: 0;
 width: calc(100% - (20px + 16px + 2vw));
 grid-gap: 2%;
+overflow: hidden;
 }
 .mainCard img {
 border-radius: 2rem;
 width: 100%;
 height: 100%;
 object-fit: cover;
-max-height: 140px;
+max-height: calc(140px + 4vw);
 }
 .mainCard div {
 font-size: 77%;
@@ -201,8 +198,8 @@ padding: 0;
 margin: 8px 0 8px 8px;
 }
 .mainCard button {
-border: 2px solid #000;
-background: var(--textLight);
+border: 2px solid var(--oppThemeClr);
+background: var(--oppThemeClr);
 color: var(--text);
 display: flex;
 /*grid-template-columns: 2fr 1fr;*/
@@ -210,24 +207,33 @@ place-items: center;
 justify-content: space-between;
 border-radius: 3rem;
 padding: 4px calc(6px + 1vw);
-font-size: 97%;
+font-size: 99%;
 margin: 4px 8px;
 }
 .mainCard button:hover {
-border: 2px solid var(--text);
-background: var(--oppThemeClr);
-color: var(--text);
+border: 2px solid var(--oppThemeClr);
+background: var(--landing-light-blur);
+color: var(--oppThemeClr);
 }
 .mainCard button span{
 background: var(--oppThemeClr);
 border-radius: 100%;
-padding: 4px;
 color: var(--text);
 display: grid;
 place-items: center;
 width: 20px;
 height: 20px;
-font-size: 150%;
+font-size: 100%;
+text-align: center;
+position: relative;
+}
+.mainCard button span:after {
+   content: '›';
+   font-size: 1.5rem;
+   position: absolute;
+   top: calc(50% - 1.25rem);
+   bottom: 50%;
+   color: var(--text);
 }
 .tech-info {
 position: relative;
@@ -242,7 +248,7 @@ border-left: 3px solid;
 border-image: linear-gradient(to top, #2e363f3e, var(--textLight), #2e363f0d) 1;
 }
 .techCard:hover h2{
-font-size: 108%;
+font-weight: 900;
 text-decoration: underline;
 }
 .techCard h2 {
@@ -300,10 +306,10 @@ padding: 8px 12px;
 font-size: 90%;
 }
 .tags button:hover {
-font-size: 105%;
-font-weight: 700;
+font-weight: 800;
 border-bottom: 1.5px solid var(--hover-color);
 color: var(--hover-color);
+box-sizing: border-box;
 }
 .mainDes {
 color: var(--textDeep);
