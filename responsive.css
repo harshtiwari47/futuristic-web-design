@@ -201,12 +201,12 @@ flex: 1;
 }
 @media (min-width: 1920px) {
 :root {
-font-size: 150%;
+font-size: 140%;
 }
 }
 @media (min-width: 3840px) {
 :root {
-font-size: 180%;
+font-size: 160%;
 }
 }
 /*div {
