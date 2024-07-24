@@ -41,7 +41,7 @@ font-family: 'Fahkwang';
 background: var(--text);
 display: flex;
 overflow: hidden!important;
-width: 100vw;
+width: 99.9vw;
 }
 .navigation {
 min-height: 100px!important;
