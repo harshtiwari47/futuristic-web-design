@@ -192,7 +192,7 @@ flex: 1;
 /* Ultra large devices (extra large desktops, 1400px and up) */
 @media (min-width: 1400px) {
 :root {
-font-size: calc(100% + 2vw);
+font-size: calc(100% + .3vw);
 }
 .right-content {
 height: 100vh;
@@ -201,7 +201,7 @@ flex: 1;
 }
 @media (min-width: 1920px) {
 :root {
-font-size: calc(100% + 1vw);
+font-size: calc(100% + .6vw);
 }
 .mainCard{
 max-height: 200px;
