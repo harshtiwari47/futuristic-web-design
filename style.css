@@ -1,5 +1,4 @@
 :root {
-font-size: 100%;
 --body: #f0f2f3;
 }
 .light {
@@ -189,7 +188,7 @@ object-fit: cover;
 max-height: calc(140px + 4vw);
 }
 .mainCard div {
-font-size: clamp(1rem, calc(0.5rem + 1vw), 2rem);
+font-size: clamp(1rem, calc(0.5rem + 0.65vw), 2rem);
 color: var(--textLight);
 display: grid;
 align-items: center;
