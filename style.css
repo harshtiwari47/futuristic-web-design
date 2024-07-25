@@ -148,7 +148,7 @@ z-index: 10;
 border-radius: 1rem;
 background: radial-gradient(circle 32em at 100% 0, var(--text), #d6e6f500);
 padding: 8px 16px;
-margin: calc(1vw + 2vh) calc(8px + 1vw);
+margin: 1vh calc(8px + 1vw);
 width: calc(180% - (48px + 2vw));
 display: grid;
 place-items: center;
