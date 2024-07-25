@@ -221,19 +221,8 @@ border-radius: 100%;
 color: var(--text);
 width: 20px;
 height: 20px;
-text-align: center;
-position: relative;
-}
-.mainCard button span:after {
-content: '›';
-font-size: 1.5rem;
-width: 20px;
-height: 20px;
-top: -11px;
-display: grid;
-place-items: center;
-position: absolute;
-color: var(--text);
+font-size: 100%;
+box-sizing: border-box;
 }
 .tech-info {
 flex: 1;
