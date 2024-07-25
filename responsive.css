@@ -179,17 +179,17 @@ flex: 1;
 @media (min-width: 1200px) {
 
 :root {
-font-size: clamp(1rem, calc(0.75rem + 0.425vw), 1.65rem);
+font-size: clamp(1rem, calc(0.70rem + 0.425vw), 1.65rem);
 }
 
 .mainCard div {
-font-size: 100%;
+font-size: 88%;
 }
 .tags button{
-font-size: 100%;
+font-size: 90%;
 }
 .navigation .nav-item {
-font-size: 100%;
+font-size: 115%;
 }
 
 .mainDes {
