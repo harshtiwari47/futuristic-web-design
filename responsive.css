@@ -220,9 +220,13 @@ max-height: calc(140px + 4vw);
 :root {
 font-size: clamp(1.35rem, calc(0.76rem + 0.410vw), 1.65rem);
 }
+.mainCard {
+display: grid;
+grid-template-columns: 0.65fr 1fr;
+}
 
 .mainCard img {
-max-height: calc(130px + 4.70vw);
+max-height: calc(120px + 4.65vw);
 }
 }
 @media (min-width: 3840px) {
