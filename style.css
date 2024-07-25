@@ -216,13 +216,15 @@ background: var(--landing-light-blur);
 color: var(--oppThemeClr);
 }
 .mainCard button svg {
-background: var(--oppThemeClr);
 border-radius: 100%;
 fill: var(--text);
 width: 24px;
 height: 24px;
 display: block;
 margin: auto;
+}
+.mainCard button:hover svg {
+fill: var(--oppThemeClr);
 }
 .tech-info {
 font-size: 94%;
