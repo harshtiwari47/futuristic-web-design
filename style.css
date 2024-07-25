@@ -215,14 +215,12 @@ border: 2px solid var(--oppThemeClr);
 background: var(--landing-light-blur);
 color: var(--oppThemeClr);
 }
-.mainCard button span{
+.mainCard button svg {
 background: var(--oppThemeClr);
 border-radius: 100%;
-color: var(--text);
-width: 20px;
-height: 20px;
-font-size: 100%;
-box-sizing: border-box;
+fill: var(--text);
+width: 24px;
+height: 24px;
 }
 .tech-info {
 flex: 1;
