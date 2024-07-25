@@ -198,7 +198,7 @@ height: 100vh;
 flex: 1;
 }
 .mainCard img {
-max-height: calc(140px + 3vw);
+max-height: calc(140px + 2.75vw);
 }
 }
 
@@ -219,7 +219,7 @@ font-size: clamp(1.35rem, calc(0.76rem + 0.410vw), 1.65rem);
 }
 
 .mainCard img {
-max-height: calc(130px + 4.75vw);
+max-height: calc(130px + 4.70vw);
 }
 }
 @media (min-width: 3840px) {
