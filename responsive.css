@@ -218,7 +218,7 @@ max-height: calc(140px + 4vw);
 font-size: clamp(1.40rem, calc(0.76rem + 0.412vw), 1.65rem);
 }
 .mainDes {
-font-size: 90%
+font-size: 80%
 }
 
 .mainCard img {
