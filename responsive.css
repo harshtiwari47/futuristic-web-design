@@ -225,6 +225,3 @@ max-height: calc(130px + 4.75vw);
 @media (min-width: 3840px) {
 
 }
-div {
-border: 1px solid #423eef;
-}
