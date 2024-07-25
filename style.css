@@ -221,6 +221,8 @@ border-radius: 100%;
 fill: var(--text);
 width: 24px;
 height: 24px;
+display: block;
+margin: auto;
 }
 .tech-info {
 font-size: 94%;
