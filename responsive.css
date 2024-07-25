@@ -179,7 +179,7 @@ flex: 1;
 @media (min-width: 1200px) {
 
 :root {
-font-size: clamp(1rem, calc(0.70rem + 0.425vw), 1.65rem);
+font-size: clamp(1rem, calc(0.60rem + 0.425vw), 1.65rem);
 }
 
 .mainCard div {
@@ -217,6 +217,9 @@ max-height: calc(140px + 4vw);
 }
 }
 @media (min-width: 1919px) {
+:root {
+font-size: clamp(1rem, calc(0.8rem + 0.425vw), 1.65rem);
+}
 
 .mainCard img {
 max-height: calc(140px + 5vw);
