@@ -1,8 +1,5 @@
 :root {
---body: #f0f2f3;
 font-size: clamp(1rem, calc(0.75rem + 0.4vw), 1.5rem);
-}
-.light {
 --text: #fcfcfd;
 --textLight: #222834;
 --textDeep: #000;
@@ -14,6 +11,77 @@ font-size: clamp(1rem, calc(0.75rem + 0.4vw), 1.5rem);
 --primary: #4e47de;
 --secondary: #556eba;
 --accent: #dfdbec;
+transition: background .2s ease;
+}
+body.light {
+--text: #fcfcfd;
+--textLight: #222834;
+--textDeep: #000;
+--oppThemeClr: #000;
+--landing-blur: #fff;
+--landing-light-blur: #c8d8ea90;
+--hover-color: #0070e4;
+--hover-color-light: #6060dc;
+--primary: #4e47de;
+--secondary: #556eba;
+--accent: #dfdbec;
+transition: background .2s ease;
+}
+
+body.dark {
+--body: #020303;
+--text: #09090c;
+--textLight: #e3e6ec;
+--textDeep: #ffffff;
+--oppThemeClr: #ffffff;
+--landing-blur: #000;
+--landing-light-blur: #a0a9c790;
+--hover-color: #cacafc;
+--hover-color-light: #1414d5;
+--primary: #c1bef5;
+--secondary: #cad1e5;
+--accent: #1e1e34;
+transition: background .2s ease;
+}
+
+body.light .container {
+animation: themeLight .25s linear;
+}
+body.dark .container {
+animation: themeDark .25s linear;
+}
+body.light .navigation, body.light .mainCard, body.dark .navigation, body.dark .mainCard{
+transition: background .25s ease;
+}
+
+@keyframes themeLight {
+from {
+background: #000;
+}
+to {
+
+}
+}
+@keyframes themeDark {
+from {
+background: #e6e6ea;
+}
+to {
+
+}
+}
+
+.iconAni {
+animation: themeIcon .25s linear;
+}
+@keyframes themeIcon {
+from {
+background: red;
+transform: scale(0.8) rotate(180);
+}
+to {
+transform: scale(1) rotate(0);
+}
 }
 
 @font-face {
@@ -133,10 +201,6 @@ text-align: center;
 display: grid;
 place-items: center;
 z-index: 5;
-}
-.menu-right:hover{
-background: var(--hover-color);
-color: var(--text);
 }
 .menu-right svg path {
 fill: var(--text)!important;
