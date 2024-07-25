@@ -218,11 +218,8 @@ color: var(--oppThemeClr);
 .mainCard button svg {
 border-radius: 100%;
 fill: var(--text);
-width: 24px;
-height: 24px;
-display: block;
-margin: auto;
-background: #00000000;
+padding: 4px;
+box-sizing: border-box;
 }
 .mainCard button:hover svg {
 fill: var(--oppThemeClr);
