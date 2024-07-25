@@ -318,7 +318,7 @@ box-sizing: border-box;
 flex: 1;
 color: var(--textDeep);
 padding: 10px;
-margin: calc(2vw + 1vh) calc(8px + 1vw);
+margin: 1vh calc(8px + 1vw);
 width: calc(100% - (20px + 16px + 2vw));
 }
 #content {
