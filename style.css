@@ -219,20 +219,20 @@ color: var(--oppThemeClr);
 background: var(--oppThemeClr);
 border-radius: 100%;
 color: var(--text);
-display: grid;
-place-items: center;
 width: 20px;
 height: 20px;
-font-size: 100%;
 text-align: center;
 position: relative;
 }
 .mainCard button span:after {
 content: '›';
 font-size: 1.5rem;
+width: 20px;
+height: 20px;
+top: -11px;
+display: grid;
+place-items: center;
 position: absolute;
-top: -.65rem;
-left: 40%;
 color: var(--text);
 }
 .tech-info {
