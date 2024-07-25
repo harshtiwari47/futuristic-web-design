@@ -222,11 +222,11 @@ font-size: clamp(1.35rem, calc(0.76rem + 0.410vw), 1.65rem);
 }
 .mainCard {
 display: grid;
-grid-template-columns: 0.65fr 1fr;
+grid-template-columns: 0.5fr 1.5fr;
 }
 
 .mainCard img {
-max-height: calc(120px + 4.65vw);
+max-height: calc(120px + 4.25vw);
 }
 }
 @media (min-width: 3840px) {
