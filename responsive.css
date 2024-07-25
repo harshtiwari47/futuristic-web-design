@@ -200,6 +200,9 @@ flex: 1;
 .mainCard img {
 max-height: calc(140px + 2.75vw);
 }
+mainDes{
+font-size: 91.5%;
+}
 }
 
 /* Ultra large devices (extra large desktops, 1400px and up) */
@@ -220,9 +223,6 @@ font-size: clamp(1.35rem, calc(0.76rem + 0.410vw), 1.65rem);
 
 .mainCard img {
 max-height: calc(130px + 4.70vw);
-}
-.mainDes{
-font-size: 90%;
 }
 }
 @media (min-width: 3840px) {
