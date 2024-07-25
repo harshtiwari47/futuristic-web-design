@@ -75,6 +75,7 @@ place-items: center;
 transform: rotate(270deg);
 text-align: center;
 font-size: 100%;
+cursor: default;
 }
 .nav-item:hover {
 font-weight: 800;
