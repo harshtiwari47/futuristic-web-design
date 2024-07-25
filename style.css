@@ -222,6 +222,7 @@ width: 24px;
 height: 24px;
 display: block;
 margin: auto;
+background: #00000000;
 }
 .mainCard button:hover svg {
 fill: var(--oppThemeClr);
