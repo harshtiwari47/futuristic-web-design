@@ -231,7 +231,7 @@ position: relative;
 content: '›';
 font-size: 1.5rem;
 position: absolute;
-top: calc(50% - 0.75rem);
+top: calc(50% - 0.85em);
 bottom: 50%;
 color: var(--text);
 }
@@ -245,6 +245,7 @@ width: calc(100% - (20px + 16px + 2vw));
 .techCard{
 margin-bottom: calc(8px + 1vw);
 padding: 0 0 0 12px;
+border: 0;
 border-left: 3px solid;
 border-image: linear-gradient(to top, #2e363f3e, var(--textLight), #2e363f0d) 1;
 }
