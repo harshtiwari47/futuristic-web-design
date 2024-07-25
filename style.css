@@ -169,7 +169,6 @@ text-shadow: 0 0 30px var(--text);
 font-size: 280%;
 }
 .mainCard {
-flex: 1;
 display: grid;
 grid-template-columns: 1fr 1fr;
 background: var(--landing-light-blur);
