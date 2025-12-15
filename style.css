@@ -1,5 +1,5 @@
 :root {
-   font-size: clamp(1rem, calc(0.75rem + 0.4vw), 1.5rem);
+    font-size: clamp(1rem, calc(0.75rem + 0.4vw), 1.5rem);
     --text: #fcfcfd;
     --textLight: #222834;
     --textDeep: #000;
@@ -64,16 +64,16 @@ body.dark .mainCard {
     from {
         background: #000;
     }
-    to {
-    }
+
+    to {}
 }
 
 @keyframes themeDark {
     from {
         background: #e6e6ea;
     }
-    to {
-    }
+
+    to {}
 }
 
 .iconAni {
@@ -85,6 +85,7 @@ body.dark .mainCard {
         background: red;
         transform: scale(0.8) rotate(180deg);
     }
+
     to {
         transform: scale(1) rotate(0);
     }
@@ -111,7 +112,8 @@ body {
     font-family: 'Fahkwang';
 }
 
-button, input {
+button,
+input {
     font-family: 'Fahkwang';
 }
 
@@ -198,11 +200,7 @@ button, input {
     background: linear-gradient(to right, #0019522d, #9cc9dcd2);
 }
 
-.right-content img {
-    width: calc(100% + 40vh);
-    object-fit: cover;
-    transform: translateX(calc(15% - 30vh));
-}
+/* .right-content img styles moved to bottom for overrides/cleanup */
 
 .menu-right {
     width: calc(60px + 1vw);
@@ -223,6 +221,7 @@ button, input {
 .menu-right svg path {
     fill: var(--text) !important;
 }
+
 .footerMain {
     flex: 1;
     max-height: 400px;
@@ -419,6 +418,64 @@ button, input {
     width: calc(100% - (20px + 16px + 2vw));
 }
 
-   #content {
+#content {
     padding: 8px 16px;
+}
+
+/* Fix for main image overflow */
+.right-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* transform removed to prevent overflow */
+}
+
+/* Animations & Interactivity */
+@keyframes fade-in-up {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.mainCard,
+.tech-info div,
+.tags button,
+.mainDes,
+.footerMain {
+    animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.tech-info div:nth-child(1) {
+    animation-delay: 0.1s;
+}
+
+.tech-info div:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.tags button {
+    animation-delay: 0.3s;
+}
+
+.techCard {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.techCard:hover {
+    transform: translateX(5px);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.tags button {
+    transition: all 0.2s ease;
+}
+
+.tags button:hover {
+    transform: scale(1.05);
 }
