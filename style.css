@@ -121,7 +121,7 @@ input {
     background: var(--text);
     display: flex;
     overflow: hidden !important;
-    width: 99.9vw;
+    width: 100%;
 }
 
 .navigation {
