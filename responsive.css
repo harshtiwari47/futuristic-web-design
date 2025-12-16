@@ -3,24 +3,26 @@
    .main {
       display: flex;
       flex-direction: row;
-      width: 100vw;
+      width: 100%;
       height: auto;
    }
+
    .container {
       /*background: radial-gradient(circle 600px at 0 0, #fff, #e8eefe8c);*/
       backdrop-filter: blur(25px);
       display: block;
-      overflow-x: hidden!important;
+      overflow-x: hidden !important;
       height: auto;
       /*grid-template-columns: 1fr 3fr 5fr;
 */
    }
+
    .navigation {
       width: calc(100% - 16px);
       height: 60%;
       display: grid;
       grid-template-areas: "item1 item6 item5"
-      "item3 item2 item4";
+         "item3 item2 item4";
       grid-template-columns: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr;
       place-items: center;
@@ -28,21 +30,26 @@
       margin: 0;
       padding: 4px 8px;
    }
+
    .navigation img:nth-child(1) {
       grid-area: item1;
       width: calc(1.5rem + 4vw);
       height: calc(1.5rem + 4vw);
       border-radius: 100%;
    }
+
    .navigation div:nth-child(3) {
       grid-area: item3;
    }
+
    .navigation div:nth-child(4) {
       grid-area: item4;
    }
+
    .navigation img:nth-child(5) {
       grid-area: item5;
    }
+
    .navigation .nav-item {
       white-space: nowrap;
       display: flex;
@@ -50,51 +57,61 @@
       transform: rotate(0);
       margin: 8px 0;
    }
+
    .navigation div:nth-child(2) {
       grid-area: item2;
       text-align: left;
    }
 
    .main-content {
-      overflow: hidden!important;
+      overflow: hidden !important;
       display: block;
       padding: 12px;
       height: auto;
    }
+
    .footerMain {
       width: calc(100% - (56px + 16px + 2vw));
    }
+
    .footerMain h1 {
       font-size: 180%;
    }
+
    .footerMain:after {
       top: 0;
       right: 0;
       font-size: 300%;
    }
+
    .right-content {
       max-height: calc(400px + 4vw);
    }
+
    .right-content img {
       width: 100%;
       height: 100%;
       object-fit: cover;
       transform: translateX(0);
    }
+
    .mainCard {
       margin: 3vw calc(8px + 1vw);
       width: calc(100% - (44px + 16px + 2vw));
    }
+
    .tags {
       padding: 4px 10px;
       margin: 3vw calc(8px + 1vw);
       width: calc(100% - (44px + 16px + 2vw));
    }
+
    .mainDes {
       padding: 8px 10px;
       margin: 4vw calc(8px + 1vw);
       width: calc(100% - (44px + 16px + 2vw));
    }
+
    .tech-info {
       margin: 2vw calc(8px + 1vw);
       width: calc(100% - (44px + 16px + 2vw));
@@ -110,17 +127,20 @@
    .container {
       display: grid;
       grid-template-areas: "item1 item2"
-      "item1 item3";
+         "item1 item3";
       grid-template-columns: 1fr 2fr;
       overflow-x: hidden !important;
       height: auto;
    }
+
    .container .sidebar:nth-child(1) {
       grid-area: item1;
    }
+
    .navigation {
-      min-height: 150px!important;
+      min-height: 150px !important;
    }
+
    .container .main-content:nth-child(2) {
       grid-area: item2;
       padding: 4vw 8vw;
@@ -128,21 +148,26 @@
       height: auto;
       display: block;
    }
+
    .container .right-content:nth-child(3) {
       grid-area: item3;
       width: 100%;
    }
+
    .right-content .image-container {
       height: 80%;
    }
+
    .footerMain {
       width: calc(100% - (32px + 16px + 2vw));
    }
+
    .right-content img {
       width: 100%;
       object-fit: cover;
       transform: translateX(0);
    }
+
    .navigation .nav-item {
       font-size: 85%;
    }
@@ -153,15 +178,18 @@
    .main {
       height: auto;
    }
+
    .container {
       height: auto;
       overflow-x: hidden !important;
       height: auto;
    }
+
    .main-content {
       height: auto;
       display: block;
    }
+
    .footerMain {
       width: calc(140% - (32px + 16px + 2vw));
    }
@@ -178,27 +206,32 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
 
-:root {
-   font-size: clamp(1rem, calc(0.60rem + 0.418vw), 1.65rem);
-}
+   :root {
+      font-size: clamp(1rem, calc(0.60rem + 0.418vw), 1.65rem);
+   }
 
    .mainCard div {
       font-size: 90%;
    }
+
    .navigation .nav-item {
       font-size: 115%;
    }
+
    .mainDes {
       padding: 2px 10px;
       margin: 1vw calc(8px + 1vw);
       width: calc(100% - (20px + 16px + 2vw));
    }
+
    .right-content {
       flex: 1;
    }
+
    .mainCard img {
       max-height: calc(140px + 2.75vw);
    }
+
    mainDes {
       font-size: 91.5%;
    }
@@ -209,14 +242,17 @@
    .right-content {
       flex: 1;
    }
+
    .mainCard img {
       max-height: calc(140px + 4vw);
    }
 }
+
 @media (min-width: 1919px) {
-:root {
-   font-size: clamp(1.35rem, calc(0.76rem + 0.410vw), 1.65rem);
-}
+   :root {
+      font-size: clamp(1.35rem, calc(0.76rem + 0.410vw), 1.65rem);
+   }
+
    .mainCard {
       grid-template-columns: 0.5fr 1.5fr !important;
    }
@@ -225,4 +261,5 @@
       max-height: calc(120px + 4.25vw);
    }
 }
+
 @media (min-width: 3840px) {}
